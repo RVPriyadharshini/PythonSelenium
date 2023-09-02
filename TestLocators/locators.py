@@ -35,6 +35,17 @@ class Locators:
     Corporate_Branding_Header = "Corporate Branding"
     Configuration_Header = "//span[contains(@class, 'oxd-topbar-body-nav-tab-item') and text() = 'Configuration ']"
 
+    #LeftSide Panel
+    Leave_Link = "Leave"
+    Time_Link = "Time"
+    Recruitment_Link = "Recruitment"
+    MyInfo_Link = "My Info"
+    Performance_Link = "Performance"
+    Dashboard_Link = "Dashboard"
+    Directory_Link = "Directory"
+    Maintenance_Link = "Maintenance"
+    Claim_Link = "Claim"
+    Buzz_Link = "Buzz"
 
 
 

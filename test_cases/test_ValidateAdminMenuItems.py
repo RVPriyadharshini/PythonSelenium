@@ -4,11 +4,9 @@ from TestData.data import Data
 from pageObjects.LoginPage import LoginPage
 
 
+class TestsAdminMenualidation:
 
-
-class TestsAdminHeaderValidation:
-
-    def test_AdminHeaderValidation(self, setup):
+    def test_AdminMenuValidation(self, setup):
         self.driver = setup
         self.driver.maximize_window()
         self.driver.get(Data.url)
@@ -21,9 +19,9 @@ class TestsAdminHeaderValidation:
         self.lp.clickLogin()
         time.sleep(3)
         self.ah = AdminPage(self.driver)
-        self.ah.GettitleName()
-        self.ah.HeaderChecking()
+        self.ah.MenuChecking()
         self.driver.close()
+
 
 
 

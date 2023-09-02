@@ -72,6 +72,44 @@ class AdminPage:
         configuration = self.driver.find_element(by=By.XPATH, value=locators.Locators().Configuration_Header).text
         self.assertValidation(configuration, "Configuration")
 
+    def MenuChecking(self):
+        time.sleep(3)
+
+        admin_txt = self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().Admin_Link).text
+        self.assertValidation(admin_txt, "Admin")
+
+        pim_txt = self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().PIM_Link).text
+        self.assertValidation(pim_txt, "PIM")
+
+        leave_txt = self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().Leave_Link).text
+        self.assertValidation(leave_txt, "Leave")
+
+        time_txt = self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().Time_Link).text
+        self.assertValidation(time_txt, "Time")
+
+        rec_txt = self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().Recruitment_Link).text
+        self.assertValidation(rec_txt, "Recruitment")
+
+        info_txt = self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().MyInfo_Link).text
+        self.assertValidation(info_txt, "My Info")
+
+        perf_txt = self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().Performance_Link).text
+        self.assertValidation(perf_txt, "Performance")
+
+        dash_txt = self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().Dashboard_Link).text
+        self.assertValidation(dash_txt, "Dashboard")
+
+        direct_txt = self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().Directory_Link).text
+        self.assertValidation(direct_txt, "Directory")
+
+        main_txt = self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().Maintenance_Link).text
+        self.assertValidation(main_txt, "Maintenance")
+
+        buzz_txt = self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().Buzz_Link).text
+        self.assertValidation(buzz_txt, "Buzz")
+
+
+
 
 
 
