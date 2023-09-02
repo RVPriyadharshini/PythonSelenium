@@ -1,8 +1,11 @@
 ---------------------------------------------**PythonSelenium**--------------------------------------------
 
 Created the page object model framework using selenium Python for OrangeHRM application
+
 **pytest-HTML** report used in the framework  
+
 Below testcases are covered as part of the Framework
+
 1) # Successful Employee login to OrangeHRM portal
       Python test case name in the Testcase directory - "**test_login.py**"
 2) # Invalid Employee login to OrangeHRM portal
