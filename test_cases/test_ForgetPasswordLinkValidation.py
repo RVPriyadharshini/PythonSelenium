@@ -5,6 +5,7 @@ from TestData.data import Data
 
 class TestsForgetPasswordLinkValidation:
 
+    #Test to validate the Reset Password Functionality
     def test_ForgetPasswordLinkValidation(self, setup):
         self.driver = setup
         self.driver.maximize_window()

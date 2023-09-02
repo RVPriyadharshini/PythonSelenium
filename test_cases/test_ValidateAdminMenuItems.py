@@ -6,6 +6,7 @@ from pageObjects.LoginPage import LoginPage
 
 class TestsAdminMenualidation:
 
+    #Test to validate the Admin Menu left panel sides are displaying properly
     def test_AdminMenuValidation(self, setup):
         self.driver = setup
         self.driver.maximize_window()

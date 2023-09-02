@@ -5,14 +5,17 @@ from TestLocators import locators
 from selenium.webdriver.common.by import By
 
 class HomePage:
+
+    #Initializing
     def __init__(self, driver):
         self.driver = driver
 
+    #Method to Click PIM
     def Click_PIM(self):
         self.driver.implicitly_wait(10)
         self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().PIM_Link).click()
 
-
+    #Method to Add Employee
     def Add_Employee(self, firstName, lastname):
         self.driver.implicitly_wait(10)
         self.driver.find_element(by=By.XPATH, value=locators.Locators().Add_button).click()
@@ -24,6 +27,7 @@ class HomePage:
         self.driver.find_element(by=By.XPATH, value=locators.Locators().Save_Button).click()
         time.sleep(5)
 
+    #Method to Edit Employee
     def Edit_Employee(self,employeeName, lastName):
         time.sleep(10)
         self.driver.implicitly_wait(10)
@@ -39,6 +43,7 @@ class HomePage:
         self.driver.find_element(by=By.XPATH, value=locators.Locators().Edit_SaveBtn).click()
         time.sleep(5)
 
+    #Method to Delete Employee
     def Delete_Employee(self, employeeName):
         self.driver.implicitly_wait(10)
         self.driver.find_element(by=By.LINK_TEXT, value=locators.Locators().PIM_Link).click()

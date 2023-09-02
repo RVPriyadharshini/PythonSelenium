@@ -9,7 +9,7 @@ import pytest
 
 class TestsLogin:
 
-
+    #Test to validate  user loggedin successfully
     def test_loginpage(self,setup):
         self.driver = setup
         self.driver.maximize_window()
@@ -32,6 +32,7 @@ class TestsLogin:
         logging.log(6, "User successfully logged into the OrangeHRM application")
         self.driver.close()
 
+    #Test to validate the login failure functionality
     def test_loginfailure(self,setup):
         self.driver = setup
         self.driver.maximize_window()

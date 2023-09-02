@@ -9,7 +9,8 @@ import pytest
 
 class TestsEmployeeValidation:
 
-    def test_loginpage(self,setup):
+    #Test to validate the Add Employee, Update Employee and Delete Employee
+    def test_EmployeeValidation(self,setup):
         self.driver = setup
         self.driver.maximize_window()
         self.driver.get(Data.url)

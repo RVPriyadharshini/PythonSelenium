@@ -8,6 +8,7 @@ from pageObjects.LoginPage import LoginPage
 
 class TestsAdminHeaderValidation:
 
+    #Test to validate the Admin Tabs are displaying properly
     def test_AdminHeaderValidation(self, setup):
         self.driver = setup
         self.driver.maximize_window()

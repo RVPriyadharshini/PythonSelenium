@@ -6,9 +6,11 @@ from selenium.common.exceptions import NoSuchElementException
 
 
 class AdminPage:
+    #Initializing
     def __init__(self, driver):
         self.driver = driver
 
+    #Method to validate the reset password page
     def ResetPassword(self, username):
      try:
         self.driver.implicitly_wait(10)
@@ -26,9 +28,11 @@ class AdminPage:
         print(stack_trace)
 
 
+    #Method to take screenshot
     def TakeScreenshot(self, ImageName):
         self.driver.get_screenshot_as_file("Screenshot/Screenshot_Clipping/" + ImageName + ".png")
 
+    #Method to Get the title of the page
     def GettitleName(self):
         time.sleep(5)
         actual_title = self.driver.title
@@ -37,6 +41,8 @@ class AdminPage:
             assert True
         else:
             assert False
+
+    #Method to validate the expected message
     def assertValidation(self, extractmsg, inputmsg):
         if extractmsg == inputmsg:
             assert True
@@ -45,7 +51,7 @@ class AdminPage:
             assert False
 
 
-
+    #Method to validate the Headers of the Admin Page
     def HeaderChecking(self):
         time.sleep(3)
 
@@ -72,6 +78,7 @@ class AdminPage:
         configuration = self.driver.find_element(by=By.XPATH, value=locators.Locators().Configuration_Header).text
         self.assertValidation(configuration, "Configuration")
 
+    #Method to validate the Left side Panel menu items are displaying properly
     def MenuChecking(self):
         time.sleep(3)
 
