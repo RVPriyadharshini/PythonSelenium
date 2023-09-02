@@ -18,3 +18,28 @@ class Locators:
     Edit_Employee = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div/div/div[9]/div/button[2]/i'
     Delete_Employee = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div/div/div[9]/div/button[1]/i'
     DelConfirm_Popup = '//*[@id="app"]/div[3]/div/div/div/div[3]/button[2]'
+
+    #AdminPage Locators
+    #Forget_PasswordLink = "//p[text()='Forgot your password? ']"
+    Forget_PasswordLink = '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[4]/p'
+    username_input_box = 'username'
+    #Reset_Password = "//button[text()=' Reset Password ']"
+    Reset_password = "/html/body/div/div[1]/div[1]/div/form/div[2]/button[2]"
+    Admin_Link = "Admin"
+    Get_Title = '//*[@id="app"]/div[1]/div[1]/aside/nav/div[1]/a/div[2]/img'
+    User_Management = "//span[contains(@class, 'oxd-topbar-body-nav-tab-item') and text() = 'User Management ']"
+    Job_Header = "//span[contains(@class, 'oxd-topbar-body-nav-tab-item') and text() = 'Job ']"
+    Organization_Header = "//span[contains(@class, 'oxd-topbar-body-nav-tab-item') and text() = 'Organization ']"
+    Qualification_Header = "//span[contains(@class, 'oxd-topbar-body-nav-tab-item') and text() = 'Qualifications ']"
+    Nationalities_Header = "Nationalities"
+    Corporate_Branding_Header = "Corporate Branding"
+    Configuration_Header = "//span[contains(@class, 'oxd-topbar-body-nav-tab-item') and text() = 'Configuration ']"
+
+
+
+
+
+
+
+
+
